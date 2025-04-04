@@ -5,6 +5,9 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+/* styles.css */
+
+
 a {
   text-decoration: none;
 }
@@ -40,6 +43,9 @@ h6 {
   z-index: 10000;
   background-color: #ffffff;
 }
+/* Style the Swiper buttons */
+
+
 
 
 
@@ -279,7 +285,7 @@ h6 {
   justify-content: center;
   align-items: center;
   height: 600px; /* Ensures all slides are uniform in height */
-  background: #ffffff;
+ 
 }
 
 /* Ensures images fit properly */
@@ -291,10 +297,7 @@ h6 {
 }
 
 /* Navigation arrows */
-.swiper-button-next,
-.swiper-button-prev {
-  color: #081F62; /* Matches your website's theme */
-}
+
 
 /* Pagination styling */
 .swiper-pagination-bullet {
@@ -1138,6 +1141,8 @@ h6 {
 .product_row
 {
   border-right: 1px solid transparent !important;
+  padding-left: 200px !important;
+  padding-right: 200px !important;
 }
 .product_row .swiper-slide:last-child .productItem
 {
@@ -1238,32 +1243,40 @@ h6 {
 }
 
 
+/* Reduce the size of the Swiper navigation arrows */
 .swiper-button-prev, .swiper-button-next {
- 
-  color: #000 !important;
-  font-size: 20px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  transform: translateY(-50%);
-  font-size: 20px !important;
+  font-size: 22px;          /* Size of the arrows */
+  width: 40px !important;    /* Width of the circular button */
+  height: 40px !important;   /* Height of the circular button */
+  background-color: rgba(235, 231, 231, 0.9) !important;  /* Background color */
+  color: #000 !important;   /* Arrow color */
+  border-radius: 50%;        /* Make the button circular */
+  display: flex;             /* Use flexbox to center the content */
+  justify-content: center;   /* Center horizontally */
+  align-items: center;       /* Center vertically */
+  position: absolute;        /* Position absolute to control placement */
+  top: 50%;                  /* Position at the center vertically */
+  transform: translateY(-50%); /* Adjust vertical alignment to truly center it */
+  transition: background-color 0.3s ease; 
 }
+
+/* Adjust the size of the arrow icons inside the buttons */
+.swiper-button-prev::after, .swiper-button-next::after {
+  font-size: 22px !important;  /* Adjust icon size */
+  background-color: rgba(235, 231, 231, 0.8) !important;  /* Background color */
+  color: #000 !important;   
+}
+
+
+
 
 /* Position the buttons */
 .swiper-button-prev {
-  left: 10px;
+  left: 10px !important;
 }
 
 .swiper-button-next {
-  right: 10px;
+  right: 30px !important;
 }
 
 /* Optional Hover Effect */
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  background-color: #212529; /* Darker shade on hover */
-  color: #f1f0f0 !important;
-}

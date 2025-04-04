@@ -27,13 +27,12 @@ const RelatedProduct=(props)=>{
       ];
     return(
         <>
-        <div className="d-flex align-items-centter mt-5">
-            <div className="info w-75 ps-5">
-                <h3 className="mb-0">{props.title}</h3>
-
-            </div>
-
-        </div>
+   
+        <div class="separator pb-3">
+        <div class="line"></div>
+        <h3 class="mb-0 h3 fw-bold">{props.title}</h3>
+        <div class="line"></div>
+      </div>
         <div className='product_row w-100 mt-3 ps-5 pe-5 '>
 
             <Swiper

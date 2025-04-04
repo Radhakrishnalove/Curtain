@@ -199,7 +199,9 @@ const Product=()=>{
 				
 				</section>
 				<br/>
+
 				<div className='section-padding'>
+		
 				<RelatedProduct title="RELATED PRODUCTS"/> <br/>
 				<RelatedProduct title="RECENTLY VIEW PRODUCTS"/>
 				</div>
