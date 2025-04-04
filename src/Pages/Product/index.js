@@ -117,7 +117,7 @@ const Product=()=>{
 
 
 			{/** Review swction */}
-				<section class="py-4">
+				<section class="py-4 ms-5 me-5">
 					<div className='card mt-5 p-5 detailsPageTabs'>
 						<div className='customTabs'>
 							<ul className='list list-inline'>

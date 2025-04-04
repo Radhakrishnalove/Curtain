@@ -9,6 +9,8 @@ import Home from './Pages/Home';
 import Product from './Pages/Product';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Sidebar from './components/Sidebar';
+import Listing from './Pages/Listing';
 
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
      
     <Route path="/" exact={true} element={<Home/>} />
     <Route path="/product-details" exact={true} element={<Product/>} />
+    <Route path="/listing" exact={true} element={<Listing/>} />
     </Routes>
 
     

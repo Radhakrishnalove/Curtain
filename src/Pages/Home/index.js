@@ -34,8 +34,8 @@ function Home() {
   return (
     <>
   
-
-   <HomeBanner/>
+<div className='page-content'>
+<HomeBanner/>
   <section class="section-padding">
           <div class="container">
             <div class="text-center pb-3">
@@ -227,6 +227,8 @@ function Home() {
 
       </div>
   </section>
+   
+</div>
    
     </>
   )
