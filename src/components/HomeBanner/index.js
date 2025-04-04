@@ -2,37 +2,56 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';  // Import Swiper and SwiperSlide
 import 'swiper/css';  // Import core Swiper styles
 import 'swiper/css/navigation';  // Import navigation styles
-import { Navigation, Autplay } from 'swiper/modules';  // Import necessary modules
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
+import img9 from '../../assets/images/slider1.jpg';
+import img10 from '../../assets/images/slider2.jpg';
+import img11 from '../../assets/images/slider3.jpg';
 function HomeBanner() {
+
+
   return (
-    <div className="slider-container">
+    
+    <div class="page-content">
+      <div className="swiper-container">
       <Swiper
-        modules={[Navigation]}  // Pass modules to Swiper
-        spaceBetween={50}  // Set space between slides
-        slidesPerView={1}  // Set number of slides per view
-        navigation  // Enable navigation buttons
-        pagination={{ clickable: true }}  // Enable clickable pagination dots
-        loop ={true} // Enable loop for continuous sliding
+        modules={[Navigation, Pagination, Autoplay]}
+        spaceBetween={10}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        className="swiper-wrapper"
+        loop={true} // Loop the slides
       >
-        
 
-        <SwiperSlide>
-          <div className="slide-content">
-            <img src="https://opencart.templatemela.com/OPCADD2/OPC047/image/cache/catalog/main-banner-1301x491.jpg" alt="Slide 2" className="slider-image"/>
-           
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="slide-content">
-            <img src="https://opencart.templatemela.com/OPCADD2/OPC047/image/cache/catalog/main-banner-2-1301x491.jpg" alt="Slide 2" className="slider-image"/>
-          
-          </div>
-        </SwiperSlide>
-
-        
+         <SwiperSlide className="swiper-slide">
+          <img 
+            src={img10} 
+            alt="Slide 1"
+            className="swiper-slide-img"
+          />
+          </SwiperSlide>
+       
+          <SwiperSlide className="swiper-slide">
+          <img 
+            src={img10} 
+            alt="Slide 1"
+            className="swiper-slide-img"
+          />
+          </SwiperSlide>
+          <SwiperSlide className="swiper-slide">
+          <img 
+            src={img10} 
+            alt="Slide 1"
+            className="swiper-slide-img"
+          />
+          </SwiperSlide>
+     
       </Swiper>
     </div>
+
+  </div>
   );
 }
 
